@@ -1,0 +1,12 @@
+@import "primereact/resources/themes/lara-light-indigo/theme.css";
+@import "primereact/resources/primereact.min.css";
+@import "primeicons/primeicons.css";
+
+/* Custom overrides using Tailwind or plain CSS */
+.p-button {
+  @apply bg-indigo-600 text-white rounded-md px-4 py-2;
+}
+
+.p-inputtext {
+  @apply border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500;
+}
