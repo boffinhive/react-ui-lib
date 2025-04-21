@@ -26,9 +26,6 @@ module.exports = __toCommonJS(index_exports);
 
 // src/components/Button.tsx
 var import_button = require("primereact/button");
-var import_theme = require("primereact/resources/themes/lara-light-blue/theme.css");
-var import_primereact_min = require("primereact/resources/primereact.min.css");
-var import_primeicons = require("primeicons/primeicons.css");
 var import_jsx_runtime = require("react/jsx-runtime");
 var Button = ({ label, onClick }) => {
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
