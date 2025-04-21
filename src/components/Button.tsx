@@ -1,9 +1,4 @@
-import React from "react";
 import { Button as PrimeButton } from "primereact/button";
-// import "primereact/resources/themes/lara-light-blue/theme.css";
-// import "primereact/resources/primereact.min.css";
-// import "primeicons/primeicons.css";
-// import "../index.css";
 
 type Props = {
   label: string;
