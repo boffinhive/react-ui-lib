@@ -1,8 +1,9 @@
 import * as react_jsx_runtime from 'react/jsx-runtime';
-import React from 'react';
+import { ButtonProps } from 'primereact/button';
+import { InputTextProps } from 'primereact/inputtext';
 
-declare const Button: ({ children }: {
-    children: React.ReactNode;
-}) => react_jsx_runtime.JSX.Element;
+declare const StyledButton: (props: ButtonProps) => react_jsx_runtime.JSX.Element;
 
-export { Button };
+declare const StyledInputText: (props: InputTextProps) => react_jsx_runtime.JSX.Element;
+
+export { StyledButton, StyledInputText };

@@ -1,6 +1,18 @@
-// src/components/Button.tsx
+// src/components/StyledButton.tsx
+import { Button } from "primereact/button";
 import { jsx } from "react/jsx-runtime";
-var Button = ({ children }) => /* @__PURE__ */ jsx("button", { className: "px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition", children });
-export {
-  Button
+var StyledButton = (props) => {
+  return /* @__PURE__ */ jsx(Button, { ...props, className: `p-button ${props.className || ""}` });
 };
+
+// src/components/StyledInputText.tsx
+import { InputText } from "primereact/inputtext";
+import { jsx as jsx2 } from "react/jsx-runtime";
+var StyledInputText = (props) => {
+  return /* @__PURE__ */ jsx2(InputText, { ...props, className: `p-inputtext ${props.className || ""}` });
+};
+export {
+  StyledButton,
+  StyledInputText
+};
+//# sourceMappingURL=index.mjs.map

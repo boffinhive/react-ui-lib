@@ -20,14 +20,27 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.tsx
 var index_exports = {};
 __export(index_exports, {
-  Button: () => Button
+  StyledButton: () => StyledButton,
+  StyledInputText: () => StyledInputText
 });
 module.exports = __toCommonJS(index_exports);
 
-// src/components/Button.tsx
+// src/components/StyledButton.tsx
+var import_button = require("primereact/button");
 var import_jsx_runtime = require("react/jsx-runtime");
-var Button = ({ children }) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition", children });
+var StyledButton = (props) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_button.Button, { ...props, className: `p-button ${props.className || ""}` });
+};
+
+// src/components/StyledInputText.tsx
+var import_inputtext = require("primereact/inputtext");
+var import_jsx_runtime2 = require("react/jsx-runtime");
+var StyledInputText = (props) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_inputtext.InputText, { ...props, className: `p-inputtext ${props.className || ""}` });
+};
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  Button
+  StyledButton,
+  StyledInputText
 });
+//# sourceMappingURL=index.js.map
