@@ -17,8 +17,7 @@
     "primeicons": "^7.0.0",
     "primereact": "^10.9.4",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "tailwindcss": "^4"
+    "react-dom": "^19.1.0"
   },
   "dependencies": {
     "clsx": "^2.1.1"

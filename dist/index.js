@@ -73,7 +73,7 @@ var Button = (_a) => {
     import_button.Button,
     __spreadProps(__spreadValues({}, props), {
       className: (0, import_clsx.default)(
-        "px-4 py-2 rounded text-white bg-blue-500 hover:bg-blue-700 font-medium",
+        "px-4 py-2 rounded !text-white !bg-blue-500 !hover:bg-blue-700 !font-medium",
         className
       )
     })
