@@ -1,9 +1,9 @@
 import * as react_jsx_runtime from 'react/jsx-runtime';
+import { ButtonProps } from 'primereact/button';
 
-type Props = {
-    label: string;
-    onClick?: () => void;
-};
-declare const Button: ({ label, onClick }: Props) => react_jsx_runtime.JSX.Element;
+interface CustomButtonProps extends ButtonProps {
+    className?: string;
+}
+declare const Button: ({ className, ...props }: CustomButtonProps) => react_jsx_runtime.JSX.Element;
 
-export { Button };
+export { Button, type CustomButtonProps };
