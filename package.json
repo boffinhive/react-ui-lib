@@ -14,10 +14,10 @@
   "author": "",
   "license": "ISC",
   "peerDependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
     "primeicons": "^7.0.0",
     "primereact": "^10.9.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "tailwindcss": "^4"
   },
   "dependencies": {
@@ -26,6 +26,8 @@
   "devDependencies": {
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4",
     "tsup": "^8.4.0",
     "typescript": "^5.8.3"
   }

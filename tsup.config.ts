@@ -6,5 +6,12 @@ export default defineConfig({
   dts: true,
   sourcemap: true,
   clean: true,
-  external: ["react", "react-dom", "primeicons", "primereact", "clsx"],
+  external: [
+    "react",
+    "react-dom",
+    "primeicons",
+    "primereact",
+    "tailwindcss",
+    "clsx",
+  ],
 });
