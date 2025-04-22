@@ -10,7 +10,7 @@ export const Button = ({ className, ...props }: CustomButtonProps) => {
     <PrimeButton
       {...props}
       className={clsx(
-        "px-4 py-2 rounded !text-white !bg-blue-500 !hover:bg-blue-700 !font-medium",
+        "px-4 py-2 rounded text-white bg-blue-500 hover:bg-blue-700 font-medium",
         className
       )}
     />
