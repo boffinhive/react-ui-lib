@@ -1,7 +1,6 @@
 {
   "name": "react-ui-lib",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "version": "1.0.0",
   "description": "A UI library built with React, PrimeReact, and Tailwind CSS",
   "module": "dist/index.esm.js",
@@ -28,21 +27,5 @@
     "postcss": "^8.5.3",
     "typescript": "^5.8.3",
     "vite": "^6.3.2"
-  },
-  "keywords": [
-    "react",
-    "ui-library",
-    "tailwind",
-    "primereact"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/boffinhive/react-ui-lib.git"
-  },
-  "author": "Your Name",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/boffinhive/react-ui-lib/issues"
-  },
-  "homepage": "https://github.com/boffinhive/react-ui-lib#readme"
+  }
 }

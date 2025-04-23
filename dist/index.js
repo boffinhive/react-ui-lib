@@ -2143,7 +2143,7 @@ var sr = {
   return function() {
     for (var e = arguments.length, n = new Array(e), o = 0; o < e; o++)
       n[o] = arguments[o];
-    return ze(n, t == null ? void 0 : t.ptOptions);
+    return ze(n, t?.ptOptions);
   };
 }, Je = function(t) {
   var e = g.useRef(!1);
@@ -2205,7 +2205,7 @@ var sr = {
     a && t !== k && (i.current.textContent = k);
   }, M = function() {
     if (!(!v || a)) {
-      var k = (l == null ? void 0 : l.styleContainer) || v.head;
+      var k = l?.styleContainer || v.head;
       i.current = R(k), i.current.isConnected || (i.current.type = "text/css", m && (i.current.id = m), b && (i.current.media = b), C.addNonce(i.current, l && l.nonce || fe.nonce), k.appendChild(i.current), E && i.current.setAttribute("data-primereact-style-id", E)), i.current.textContent = t, u(!0);
     }
   }, H = function() {
@@ -2801,9 +2801,9 @@ svg.p-icon g,
   }) : "";
   return a ? T.isObject(t) ? ce(T.getItemValue(t[u], n), o.join("."), n) : void 0 : T.getItemValue(t, n);
 }, Qe = function(t) {
-  var e = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : "", n = arguments.length > 2 ? arguments[2] : void 0, o = t == null ? void 0 : t._usept, a = function(i) {
+  var e = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : "", n = arguments.length > 2 ? arguments[2] : void 0, o = t?._usept, a = function(i) {
     var l, s = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : !1, c = n ? n(i) : i, v = T.toFlatCase(e);
-    return (l = s ? v !== W.cName ? c == null ? void 0 : c[v] : void 0 : c == null ? void 0 : c[v]) !== null && l !== void 0 ? l : c;
+    return (l = s ? v !== W.cName ? c?.[v] : void 0 : c?.[v]) !== null && l !== void 0 ? l : c;
   };
   return T.isNotEmpty(o) ? {
     _usept: o,
@@ -2850,7 +2850,7 @@ svg.p-icon g,
   }), h = m.load, b = function(L) {
     if (!l) {
       var M = et(Qe((W.cProps || {}).pt, c), ce, "hooks.".concat(L)), H = ln(ce, "hooks.".concat(L));
-      M == null || M(), H == null || H();
+      M?.(), H?.();
     }
   };
   b("useMountEffect"), Je(function() {
@@ -3592,18 +3592,18 @@ var vn = /* @__PURE__ */ g.memo(/* @__PURE__ */ g.forwardRef(function(r, t) {
     if (f) {
       var w = St(f), j = w.showEvents, A = w.hideEvents, _ = kt(f);
       j.forEach(function(q) {
-        return _ == null ? void 0 : _.addEventListener(q, je);
+        return _?.addEventListener(q, je);
       }), A.forEach(function(q) {
-        return _ == null ? void 0 : _.addEventListener(q, ie);
+        return _?.addEventListener(q, ie);
       });
     }
   }, Sn = function(f) {
     if (f) {
       var w = St(f), j = w.showEvents, A = w.hideEvents, _ = kt(f);
       j.forEach(function(q) {
-        return _ == null ? void 0 : _.removeEventListener(q, je);
+        return _?.removeEventListener(q, je);
       }), A.forEach(function(q) {
-        return _ == null ? void 0 : _.removeEventListener(q, ie);
+        return _?.removeEventListener(q, ie);
       });
     }
   }, Ct = function(f) {

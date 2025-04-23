@@ -3,18 +3,16 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  css: {
-    postcss: "./postcss.config.js", // Point to your PostCSS config
-  },
   build: {
+    target: "esnext",
     lib: {
       entry: "src/index.ts",
-      name: "ReactUiLib",
+      name: "react-ui-lib",
       fileName: "index",
       formats: ["es", "cjs"],
     },
     rollupOptions: {
-      external: ["react", "react-dom", "primereact", "primeicons"],
+      external: ["react", "react-dom", "primereact", "primeicons"], // Prevent bundling React
     },
   },
 });
