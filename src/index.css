@@ -5,7 +5,7 @@
 @import 'primereact/resources/themes/mdc-light-indigo/theme.css';
 
 /* Add PrimeIcons for icons */
-@import 'primeicons/primeicons.css';
+/* @import 'primeicons/primeicons.css'; */
 
 /* Add the rest of the custom layer rules for PrimeReact */
 @layer primereact {
